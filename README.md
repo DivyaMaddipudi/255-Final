@@ -41,12 +41,15 @@
 
   - Naive Bais
 
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/1.png)
     - The results of the Binary Relevance with Logistic Regression and Naive Bayes show Logistic Regression to be performing better.
 
 - Classifier Chain: Similar to Binary Relevance classifier chain is a problem transformation method for multi-label classification. It tries to improve performance over Binary Relevance by taking advantages of labels associations, which is ignored in Binary Relevance.
 
   - Logistic Regression
   - Naive Bais
+
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/2.png)
 
     - Here the resuls show that the embeddings did not perform any better than the bag of words method. The results are almost the same, we can still consider Binary Relevance with Logistic Regression as the best method, considering its simplicity.
 
@@ -57,9 +60,22 @@
   - The first step for data preparation for LSTM is to tokenize the words and represent them as integers, where each unique word is represented by an integer value. We also need to specify the vocabulary size that determines the number of most frequent words to use in the modeling.
   - The results from the LSTM gave improvements over Logistic Regression model for the metrics Accuracy and logloss, but the AUC score is very similar. So, with improvement for two of the metrics, we can still consider LSTM to be performing better than the Logistic Regression Model.
 
+  - The below two graphs show the Loss and AUC Score graph for the LSTM model.
+
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/3.png)
+
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/4.png)
+
 - BERT: Transfer learning is a popular approach in deep learning, where a pretrained model is used as the starting point for training a new model in similar task.
+
   - For BERT, since it is a pretrained model, we will have to process our data according to the process used in the pretrained model. For that, tensorflow hub provides the necessary processing helper and we will simply make use of it.
   - As we see, with transfer learning using BERT, we achieved a higher performance compared to the previous models.
+
+  - The below two graphs show the Loss and AUC Score graph for the BERT model.
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/5.png)
+  - ![](https://github.com/DivyaMaddipudi/255-Final/blob/main/Screenshots/6.png)
+
+- Finally, With transfer learning using BERT model, we see we achieve better results , with improvements in Accuracy, AUC and LogLoss.
 
 ## References
 
